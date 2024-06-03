@@ -1,0 +1,27 @@
+Nodemon Custom File Extensions:
+nodemon app.js -e js,hbs,css
+
+NPM Dev Depdenceny:
+npm i nodemon --save-dev
+npm i env-cmd --save-dev
+
+Git:
+git init
+git add .
+git commit -m ""
+git remote add origin <repo_url>
+git branch -M main
+git push -u origin main
+
+Create Heroku App: 
+heroku create <app_name>
+
+Set/Unset Config/Env to Heroku App:
+heroku config:set <key=value> => Example: heroku config:set JWT_SECRET=TaskApp
+heroku config:unset <key> => Example: heroku config:unset JWT_SECRET
+
+List of all configs set:
+heroku config
+
+Push code to Heroku:
+git push heroku main
